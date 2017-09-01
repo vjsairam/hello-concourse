@@ -4,8 +4,6 @@ resources:
   type: git
   source:
     uri: https://github.com/ractive/hello-concourse.git
-- name: hello-councourse-docker-image
-  type: docker-image
 
 jobs:
 - name: gradle-build
