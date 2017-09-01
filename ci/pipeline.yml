@@ -15,6 +15,5 @@ jobs:
     trigger: true
   - task: build
     file: hello-concourse-repo/ci/build.yml
-  - task: find
-    run:
-      path: find .
+  - task: ls
+    file: hello-concourse-repo/ci/find.yml

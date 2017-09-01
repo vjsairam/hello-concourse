@@ -17,4 +17,4 @@ run:
   path: hello-concourse-repo/ci/build.sh
 
 caches:
-    - path: .gradle/
+  - path: .gradle/
