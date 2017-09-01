@@ -10,8 +10,8 @@ image_resource:
 inputs:
 - name: hello-concourse-repo
 outputs:
-- name: hello-concourse-repo/build/libs
-- name: hello-concourse-repo/src/main/docker
+- name: build/libs
+- name: src/main/docker
 
 run:
   path: hello-concourse-repo/ci/build.sh
