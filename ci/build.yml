@@ -10,10 +10,10 @@ image_resource:
 inputs:
 - name: hello-concourse-repo
 outputs:
-- name: ./output
+- name: output
 
 run:
   path: hello-concourse-repo/ci/build.sh
 
 caches:
-  - path: .gradle/
+- path: .gradle/
