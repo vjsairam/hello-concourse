@@ -1,6 +1,6 @@
 ---
 resources:
-- name: hello-concourse
+- name: hello-concourse-repo
   type: git
   source:
     uri: https://github.com/ractive/hello-concourse.git
@@ -9,7 +9,7 @@ jobs:
 - name: gradle-build
   public: true
   plan:
-  - get: hello-concourse
+  - get: hello-concourse-repo
     trigger: true
   - task: build
     file: hello-concourse/ci/build.yml

@@ -8,7 +8,12 @@ image_resource:
     tag: openjdk-8
 
 inputs:
-- name: hello-concourse
+- name: hello-concourse-repo
+outputs:
+- name: out
 
 run:
   path: hello-concourse/ci/build.sh
+
+caches:
+    - path: .gradle/
