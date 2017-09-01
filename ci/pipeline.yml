@@ -3,13 +3,13 @@ resources:
 - name: hello-concourse
   type: git
   source:
-    uri: https://github.com/rwinch/concourse-gradle-sample.git
+    uri: https://github.com/ractive/hello-concourse.git
 
 jobs:
-- name: job-test-app
+- name: gradle-build
   public: true
   plan:
-  - get: resource-tutorial
+  - get: hello-concourse
     trigger: true
-  - task: web-app-tests
-file: resource-tutorial/ci/build.yml
+  - task: build
+    file: hello-concourse/ci/build.yml

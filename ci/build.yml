@@ -3,10 +3,12 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: java, tag: openjdk-8}
+  source:
+    repository: java
+    tag: openjdk-8
 
 inputs:
-- name: resource-tutorial
+- name: hello-concourse
 
 run:
-path: hello-concourse/ci/build.sh
+  path: hello-concourse/ci/build.sh
