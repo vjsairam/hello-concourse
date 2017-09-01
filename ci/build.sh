@@ -1,5 +1,5 @@
 #!/bin/bash
 
 export TERM=${TERM:-dumb}
-cd resource-tutorial
+cd hello-concourse
 ./gradlew --no-daemon build
