@@ -13,7 +13,7 @@ outputs:
 - name: out
 
 run:
-  path: hello-concourse/ci/build.sh
+  path: hello-concourse-repo/ci/build.sh
 
 caches:
     - path: .gradle/

@@ -12,4 +12,4 @@ jobs:
   - get: hello-concourse-repo
     trigger: true
   - task: build
-    file: hello-concourse/ci/build.yml
+    file: hello-concourse-repo/ci/build.yml
