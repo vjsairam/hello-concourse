@@ -8,7 +8,6 @@ image_resource:
 inputs:
 - name: build/libs
 - name: src/main/docker
-- name: foo
 
 run:
   path: find
