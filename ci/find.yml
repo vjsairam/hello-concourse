@@ -6,8 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 inputs:
-- name: build/libs
-- name: src/main/docker
+- name: output
 
 run:
   path: find
