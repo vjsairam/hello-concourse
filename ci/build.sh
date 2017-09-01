@@ -5,5 +5,5 @@ export GRADLE_USER_HOME="${ROOT_FOLDER}/.gradle"
 
 export TERM=${TERM:-dumb}
 cd hello-concourse-repo
-./gradlew --no-daemon --info build
+./gradlew --no-daemon --info build -xtest
 find .
