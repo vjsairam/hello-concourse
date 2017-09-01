@@ -15,7 +15,7 @@ public class HelloConcourseApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		LOG.info("Hello concourse test");
+		LOG.info("Hello concourse test!");
 	}
 
 }
