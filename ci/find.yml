@@ -6,8 +6,8 @@ image_resource:
   source: {repository: busybox}
 
 inputs:
-- name: build/libs
-- name: src/main/docker
+- name: hello-concourse-repo/build/libs
+- name: hello-concourse-repo/src/main/docker
 
 run:
   path: find
