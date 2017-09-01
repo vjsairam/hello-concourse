@@ -1,0 +1,15 @@
+---
+resources:
+- name: hello-concourse
+  type: git
+  source:
+    uri: https://github.com/rwinch/concourse-gradle-sample.git
+
+jobs:
+- name: job-test-app
+  public: true
+  plan:
+  - get: resource-tutorial
+    trigger: true
+  - task: web-app-tests
+file: resource-tutorial/ci/build.yml
