@@ -4,6 +4,8 @@ resources:
   type: git
   source:
     uri: https://github.com/ractive/hello-concourse.git
+- name: hello-councourse-docker-image
+  type: docker-image
 
 jobs:
 - name: gradle-build
@@ -13,3 +15,6 @@ jobs:
     trigger: true
   - task: build
     file: hello-concourse-repo/ci/build.yml
+  - task: find
+    run:
+      path: find .
