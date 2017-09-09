@@ -7,7 +7,8 @@ export TERM=${TERM:-dumb}
 cd hello-concourse-repo
 ./gradlew --no-daemon build -xtest
 
-mkdir -p output
+cd ..
+
 cp build/libs/*.jar output
 cp src/main/docker/* output
 ls -l output
