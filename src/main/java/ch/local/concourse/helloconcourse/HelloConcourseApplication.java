@@ -17,4 +17,5 @@ public class HelloConcourseApplication {
 	public String hello() {
 		return "Hello, concourse";
 	}
+
 }
