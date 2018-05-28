@@ -7,6 +7,8 @@ image_resource:
 
 inputs:
 - name: output
+outputs:
+- name: output
 
 run:
   path: ls

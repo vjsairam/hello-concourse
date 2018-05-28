@@ -1,7 +1,7 @@
 FROM frolvlad/alpine-oraclejdk8:slim
 
-ADD src/main/docker/entrypoint.sh /entrypoint.sh
-ADD build/libs/hello-concourse-0.0.1-SNAPSHOT.jar /app/
+ADD ./entrypoint.sh /entrypoint.sh
+ADD ./hello-concourse-repo-0.0.1-SNAPSHOT.jar /app/
 
 RUN apk --update add tzdata && ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 RUN chmod a+x /entrypoint.sh
