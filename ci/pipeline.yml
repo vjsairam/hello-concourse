@@ -9,7 +9,7 @@ resources:
   source:
     repository: harbor1.internal-local.ch/james-test/hello-concourse
     username: james
-    password: xxx
+    password: ((registry-password))
 
 jobs:
 - name: gradle-build
