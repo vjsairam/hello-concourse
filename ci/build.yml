@@ -4,16 +4,13 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: java
-    tag: openjdk-8
+    repository: alpine
 
 inputs:
-- name: hello-concourse-repo
+- name: some-important-input
 outputs:
 - name: output
 
 run:
-  path: hello-concourse-repo/ci/build.sh
-
-caches:
-- path: .gradle/
+  path: ls
+  args: ['-alR']
