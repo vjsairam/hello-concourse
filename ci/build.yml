@@ -12,5 +12,4 @@ outputs:
 - name: output
 
 run:
-  path: ls
-  args: ['-alR']
+  path: cp . ../output && ls -l ../output
